@@ -10,9 +10,7 @@ Description: print vertical position and velocity at agiven time in SI units.
 int main(void) {
   const double g = 9.81;    //accleration due to gravity
   const double Y_0 = 40.0;   // Initial height
-  double y;
-  double vel;
-  double t;
+  double y, vel, t;
   t = 1.2;
   y = Y_0 - 0.5 * (g*t*t);
   vel = -g*t;
