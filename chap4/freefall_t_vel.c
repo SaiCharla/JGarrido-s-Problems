@@ -9,13 +9,14 @@ Description: Caculats the freefall time and terminal vlocity given the initial h
 #include<math.h>
 
 int main(void){
-  double h, t, v;    //Initial heoght, Final time and terminal velocity
+  double h, t, v;    //Initial height, Final time and terminal velocity
   const double g = 9.81;
   printf("Enter the initial height of the object ");
   scanf("%lf", &h);
   t = sqrt(2*h/g);
   v = sqrt(2*g*h);
-  printf("The freefall time is %lf s \nand the terminal velocity is %lf m/s \n", t, v);
+  printf("The freefall time is %lf s \n and the terminal velocity is %lf\
+ m/s \n", t, v);
   return 0;
 }
 
